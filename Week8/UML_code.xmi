@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://schema.omg.org/spec/UML/2.1">
+  <xmi:Documentation exporter="umbrello uml modeller 25.11.70-37ef14d (experimental) (Applications 25.11.70) http://umbrello.kde.org" exporterVersion="2.0.4"/>
+  <uml:Model xmi:id="m1" name="UML Model">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="folder" name="folder"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="dataType" name="dataType"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="constructor" name="constructor"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Logical_View" name="Logical View" stereotype="folder">
+      <uml:Package xmi:id="Datatypes" name="Datatypes" stereotype="folder">
+        <packagedElement xmi:type="uml:DataType" xmi:id="uGheatMYSGkiu" name="char" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uyDey6iEor2tQ" name="int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uB9ZTyJjsPAzA" name="float" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u1t6aBwHiiC7v" name="double" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uuZvRER5voAkM" name="bool" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uX4zGfpL8WCLJ" name="string" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="upkuyOPtLfgj4" name="unsigned char" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uyeNZZ7JgR76f" name="signed char" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uzB76dGDppuR7" name="unsigned int" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u0awWcjee1WLK" name="signed int" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uyUrPgXEGXaNO" name="short int" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uogGX4o6I8k6n" name="unsigned short int" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uulAMuurUmrUY" name="signed short int" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="upJySV3g7mahd" name="long int" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uJBS0ZYJnHjJk" name="signed long int" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uCw3RCrXhM0AR" name="unsigned long int" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uTk13Bgxsev9T" name="long double" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uir1mH3qfgFt3" name="wchar_t" stereotype="dataType" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uIGfgkLVwodcA" name="array" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uNO6IdPYwnTMx" name="tuple" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ux2djTHZXLuP0" name="list" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uiU5oenAjj4HL" name="long" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u3q76XDcpft2L" name="dict" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uetDqfmKNig72" name="object" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uDAg825KeYTmd" name="set" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uMZ6QyZIKDsho" name="str" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u9PoKwRynJ92p" name="undef" stereotype="dataType"/>
+      </uml:Package>
+      <packagedElement xmi:type="uml:Class" xmi:id="u9OmGItKhHptN" name="Habitat" comment="    The habitat for the ecosystem.&#10;">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uFpQLcCCUS6kx" name="used_space" comment="Initializes the habitat with a maximum capacity.&#10;&gt;&gt;&gt; h = Habitat(100)&#10;&gt;&gt;&gt; h.total_space&#10;100&#10;&gt;&gt;&gt; h.used_space&#10;0&#10;&gt;&gt;&gt; len(h.plants)&#10;0&#10;Max capacity for ground-based plants Currently occupied space List to store all plant objects List to store all animal objects Round tracker Starting season Influences growth (standard: 1.0)        Initializes the habitat with a maximum capacity.&#10;&gt;&gt;&gt; h = Habitat(100)&#10;&gt;&gt;&gt; h.total_space&#10;100&#10;&gt;&gt;&gt; h.used_space&#10;0&#10;&gt;&gt;&gt; len(h.plants)&#10;0&#10;Max capacity for ground-based plants Currently occupied space" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uPMCVBJLGCsfp" name="plants" comment="Initializes the habitat with a maximum capacity.&#10;&gt;&gt;&gt; h = Habitat(100)&#10;&gt;&gt;&gt; h.total_space&#10;100&#10;&gt;&gt;&gt; h.used_space&#10;0&#10;&gt;&gt;&gt; len(h.plants)&#10;0&#10;Max capacity for ground-based plants Currently occupied space List to store all plant objects List to store all animal objects Round tracker Starting season Influences growth (standard: 1.0)        Initializes the habitat with a maximum capacity.&#10;&gt;&gt;&gt; h = Habitat(100)&#10;&gt;&gt;&gt; h.total_space&#10;100&#10;&gt;&gt;&gt; h.used_space&#10;0&#10;&gt;&gt;&gt; len(h.plants)&#10;0&#10;Max capacity for ground-based plants Currently occupied space List to store all plant objects" type="ux2djTHZXLuP0"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uuzVxTuSN01YJ" name="animals" comment="Initializes the habitat with a maximum capacity.&#10;&gt;&gt;&gt; h = Habitat(100)&#10;&gt;&gt;&gt; h.total_space&#10;100&#10;&gt;&gt;&gt; h.used_space&#10;0&#10;&gt;&gt;&gt; len(h.plants)&#10;0&#10;Max capacity for ground-based plants Currently occupied space List to store all plant objects List to store all animal objects Round tracker Starting season Influences growth (standard: 1.0)        Initializes the habitat with a maximum capacity.&#10;&gt;&gt;&gt; h = Habitat(100)&#10;&gt;&gt;&gt; h.total_space&#10;100&#10;&gt;&gt;&gt; h.used_space&#10;0&#10;&gt;&gt;&gt; len(h.plants)&#10;0&#10;Max capacity for ground-based plants Currently occupied space List to store all plant objects List to store all animal objects" type="ux2djTHZXLuP0"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u8njX44PGG2jZ" name="round_counter" comment="Initializes the habitat with a maximum capacity.&#10;&gt;&gt;&gt; h = Habitat(100)&#10;&gt;&gt;&gt; h.total_space&#10;100&#10;&gt;&gt;&gt; h.used_space&#10;0&#10;&gt;&gt;&gt; len(h.plants)&#10;0&#10;Max capacity for ground-based plants Currently occupied space List to store all plant objects List to store all animal objects Round tracker Starting season Influences growth (standard: 1.0)        Initializes the habitat with a maximum capacity.&#10;&gt;&gt;&gt; h = Habitat(100)&#10;&gt;&gt;&gt; h.total_space&#10;100&#10;&gt;&gt;&gt; h.used_space&#10;0&#10;&gt;&gt;&gt; len(h.plants)&#10;0&#10;Max capacity for ground-based plants Currently occupied space List to store all plant objects List to store all animal objects Round tracker" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u9uA0U1RkQr9Y" name="season" comment="Initializes the habitat with a maximum capacity.&#10;&gt;&gt;&gt; h = Habitat(100)&#10;&gt;&gt;&gt; h.total_space&#10;100&#10;&gt;&gt;&gt; h.used_space&#10;0&#10;&gt;&gt;&gt; len(h.plants)&#10;0&#10;Max capacity for ground-based plants Currently occupied space List to store all plant objects List to store all animal objects Round tracker Starting season Influences growth (standard: 1.0)        Initializes the habitat with a maximum capacity.&#10;&gt;&gt;&gt; h = Habitat(100)&#10;&gt;&gt;&gt; h.total_space&#10;100&#10;&gt;&gt;&gt; h.used_space&#10;0&#10;&gt;&gt;&gt; len(h.plants)&#10;0&#10;Max capacity for ground-based plants Currently occupied space List to store all plant objects List to store all animal objects Round tracker Starting season" type="uMZ6QyZIKDsho"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uBpF5ntgXxSCU" name="weather_factor" comment="Initializes the habitat with a maximum capacity.&#10;&gt;&gt;&gt; h = Habitat(100)&#10;&gt;&gt;&gt; h.total_space&#10;100&#10;&gt;&gt;&gt; h.used_space&#10;0&#10;&gt;&gt;&gt; len(h.plants)&#10;0&#10;Max capacity for ground-based plants Currently occupied space List to store all plant objects List to store all animal objects Round tracker Starting season Influences growth (standard: 1.0)        Initializes the habitat with a maximum capacity.&#10;&gt;&gt;&gt; h = Habitat(100)&#10;&gt;&gt;&gt; h.total_space&#10;100&#10;&gt;&gt;&gt; h.used_space&#10;0&#10;&gt;&gt;&gt; len(h.plants)&#10;0&#10;Max capacity for ground-based plants Currently occupied space List to store all plant objects List to store all animal objects Round tracker Starting season Influences growth (standard: 1.0)" type="uB9ZTyJjsPAzA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uXcZKLHHBXw4n" name="total_space" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uyX70wQf1d7gz" name="inhabitant" type="uEKtR2ShXotqz"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uNtFXaBW8KWiR" name="__init__" comment="Initializes the habitat with a maximum capacity.&#10;&gt;&gt;&gt; h = Habitat(100)&#10;&gt;&gt;&gt; h.total_space&#10;100&#10;&gt;&gt;&gt; h.used_space&#10;0&#10;&gt;&gt;&gt; len(h.plants)&#10;0&#10;Max capacity for ground-based plants Currently occupied space List to store all plant objects List to store all animal objects Round tracker Starting season Influences growth (standard: 1.0)" stereotype="constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="usvFyKMv6wDXN" name="total_space" visibility="private" type="uyDey6iEor2tQ" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u9kwrTSdEtejA" name="add_plant" comment="Adds a plant if space is available.&#10;&gt;&gt;&gt; h = Habitat(10)&#10;&gt;&gt;&gt; g = Grass(&quot;G1&quot;)&#10;&gt;&gt;&gt; h.add_plant(g) # Test 1: Successful add&#10;True&#10;&gt;&gt;&gt; h.used_space&#10;3&#10;&gt;&gt;&gt; h.add_plant(Grass(&quot;G2&quot;)) # Test 2: Adding more&#10;True&#10;&gt;&gt;&gt; h.add_plant(Grass(&quot;G3&quot;)) # Test 3: Fail (space: 3+3+3+3 &gt; 10)&#10;False&#10;Logic: Does the plant occupy ground space? (e.g., Grass/Trees) Check if there is enough space left in the habitat Occupy space">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uWUO6LV999Tp0" type="uuZvRER5voAkM" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uYPOqxzmkbL7g" name="plant" visibility="private" type="u2GnSq4D0yOeZ" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uulqdjTBBSHUC" name="remove_plant" comment="Removes a plant and updates used space.&#10;&gt;&gt;&gt; h = Habitat(100)&#10;&gt;&gt;&gt; g = Grass(&quot;G1&quot;)&#10;&gt;&gt;&gt; h.add_plant(g)&#10;True&#10;&gt;&gt;&gt; h.remove_plant(g) # Test 1: Successful removal&#10;&gt;&gt;&gt; len(h.plants)&#10;0&#10;&gt;&gt;&gt; h.used_space # Test 2: Space is freed&#10;0&#10;&gt;&gt;&gt; h.remove_plant(g) # Test 3: Removing non-existent (safe)&#10;If it was a ground plant, free up the space">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uWPTiDUG7eOTg" name="plant" visibility="private" type="u2GnSq4D0yOeZ" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uMrhK8gvwqI41" name="remove_animal" comment="Removes an animal from the habitat list.&#10;&gt;&gt;&gt; h = Habitat()&#10;&gt;&gt;&gt; r = Rabbit(&quot;Bugs&quot;)&#10;&gt;&gt;&gt; h.animals.append(r)&#10;&gt;&gt;&gt; len(h.animals)&#10;1&#10;&gt;&gt;&gt; h.remove_animal(r) # Test 1: Successful removal&#10;&gt;&gt;&gt; len(h.animals)&#10;0&#10;&gt;&gt;&gt; h.remove_animal(r) # Test 2: Removing non-existent (should stay 0)&#10;&gt;&gt;&gt; len(h.animals)&#10;0&#10;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uoHjqSF7i5jS8" name="animal" visibility="private" type="uhh5q2NtgxacK" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uCV976gqoQhW3" name="change_season" comment="Rotates seasons every 10 rounds.&#10;&gt;&gt;&gt; h = Habitat()&#10;&gt;&gt;&gt; h.round_counter = 10&#10;&gt;&gt;&gt; h.change_season() # Test 1: Switches to Summer&#10;&gt;&gt;&gt; h.season&#10;'Summer'&#10;&gt;&gt;&gt; h.round_counter = 20&#10;&gt;&gt;&gt; h.change_season() # Test 2: Switches to Autumn&#10;&gt;&gt;&gt; h.season&#10;'Autumn'&#10;&gt;&gt;&gt; h.weather_factor # Test 3: Factor updated&#10;0.9&#10;Modulo check: Every 10 rounds, move to the next season SPECIAL RULE: Weather influence on plant growth"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="usLVAo0wALgqo" name="check_space_competition" comment="SPECIAL RULE: Smallest plants die if habitat is over 90% full.&#10;Naturtural selection due to space competition.&#10;&gt;&gt;&gt; h = Habitat(10)&#10;&gt;&gt;&gt; h.add_plant(Grass(&quot;G1&quot;))&#10;True&#10;&gt;&gt;&gt; h.add_plant(Grass(&quot;G2&quot;))&#10;True&#10;&gt;&gt;&gt; h.add_plant(Grass(&quot;G3&quot;)) # Total 9 space (90%)&#10;True&#10;&gt;&gt;&gt; h.check_space_competition() # Test 1: Safe&#10;&gt;&gt;&gt; len(h.plants)&#10;3&#10;&gt;&gt;&gt; h.total_space = 9 # Now 9 is 100% capacity&#10;&gt;&gt;&gt; h.check_space_competition() # Test 2: Competition starts&#10;&gt;&gt;&gt; len(h.plants) &lt; 3&#10;True&#10;&gt;&gt;&gt; h.used_space &lt; 9 # Test 3: Space freed&#10;True&#10;If more than 90% of the space is occupied Sort by size: The smallest/weakest die first Remove 10% of the plant population"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u4aFGsDVVsHNw" name="simulate_round" comment="The core loop of the simulation. Executes one round of growth,&#10;eating, reproduction, and death for all plants and animals.&#10;&gt;&gt;&gt; h = Habitat(100)&#10;&gt;&gt;&gt; r = Rabbit(&quot;Shorty&quot;)&#10;&gt;&gt;&gt; h.add_animal(r)&#10;&gt;&gt;&gt; # Force the rabbit to be near death&#10;&gt;&gt;&gt; r.hunger = 5.9&#10;&gt;&gt;&gt; r.max_hunger = 6.0&#10;&gt;&gt;&gt;&#10;&gt;&gt;&gt; # After one round, metabolic rate (1.0) is added&#10;&gt;&gt;&gt; h.simulate_round()&#10;&gt;&gt;&gt;&#10;&gt;&gt;&gt; # The rabbit should have died and been removed&#10;&gt;&gt;&gt; len(h.animals)&#10;0&#10;Increment round and update environment PHASE 1: PLANTS We use [:] to iterate over a copy so we can safely remove dead plants Capture return value: Can be actual_growth (int), an Apple object, or None Check if a Tree produced an Apple Standard plant reproduction logic (20% chance) PHASE 2: ANIMALS SPECIAL RULE: Bear hibernation check Animal ages/grows Animal searches for food Reproduction check Check for starvation Remove animals that were killed (e.g. eaten or natural death)"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uEKtR2ShXotqz" name="LivingBeing" isAbstract="true" comment="    Abstract base class for every entity in the ecosystem.&#10;    The purpose of this class is to provide a unified interface&#10;    for all living objects. Methods such as 'grow' and 'get_info'&#10;    are defined as abstract because plants and animals differ&#10;    fundamentally in their growth and reporting logic.&#10;    Using an abstract base class enforces specific implementations&#10;    in subclasses and prevents the instantiation of generic,&#10;    non-functional 'LivingBeing' objects.&#10;    &gt;&gt;&gt; # This test proves that you cannot create a generic LivingBeing:&#10;    &gt;&gt;&gt; try:&#10;    ...     lb = LivingBeing(&quot;Mystery&quot;)&#10;    ... except TypeError:&#10;    ...     print(&quot;Caught expected error: Cannot instantiate ABC&quot;)&#10;    Caught expected error: Cannot instantiate ABC&#10;">
+        <generalization xmi:type="uml:Generalization" xmi:id="uK6zRROb5bp5m" general="u9PoKwRynJ92p"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uFmkRjYB3QNPi" name="name" type="uMZ6QyZIKDsho"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uf3OGVFk2ixAk" name="age" comment="Basic attributes shared by plants and animals Basic attributes shared by plants and animals" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="urgluXvWtj8xv" name="is_alive" comment="Basic attributes shared by plants and animals Basic attributes shared by plants and animals" type="uuZvRER5voAkM"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uNptNnXAOb25M" name="__init__" comment="Basic attributes shared by plants and animals" stereotype="constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uBl3vTe5ugyxu" name="name" visibility="private" type="uMZ6QyZIKDsho" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uGwOyFMSDn1T2" name="grow" isAbstract="true" comment="Must be implemented by subclasses to handle aging/growth."/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="umxYh4orZhsvK" name="die" comment="Sets the status to dead. Dead objects are removed by the Habitat."/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u76hGoDbf6Ap0" name="get_info" comment="Returns a string representation of the object's status."/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="u2GnSq4D0yOeZ" name="Plant" isAbstract="true" comment="    Base class for all vegetation.&#10;     &gt;&gt;&gt; p = Plant(&quot;TestPlant&quot;, min_size=5, max_size=20, growth_rate=2)&#10;     &gt;&gt;&gt; p.current_size&#10;    5&#10;    &gt;&gt;&gt; p.be_eaten(2)&#10;    True&#10;    &gt;&gt;&gt; p.current_size&#10;    3&#10;    &gt;&gt;&gt; p.be_eaten(5)&#10;    False&#10;    &gt;&gt;&gt; p.is_alive&#10;    False&#10;">
+        <generalization xmi:type="uml:Generalization" xmi:id="uin6nSMwbww0T" general="uEKtR2ShXotqz"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u4NThrAgYbgTC" name="min_size" comment="Used for habitat capacity logic Distinguishes ground plants from epiphytes Default lifespan for plants" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ux1j38fZ6yQQ3" name="max_size" comment="Used for habitat capacity logic Distinguishes ground plants from epiphytes Default lifespan for plants" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uk8No7imfLHYk" name="current_size" comment="Used for habitat capacity logic Distinguishes ground plants from epiphytes Default lifespan for plants" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uv2PWNS0h2uwg" name="growth_rate" comment="Used for habitat capacity logic Distinguishes ground plants from epiphytes Default lifespan for plants" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uWPNmecgMOYrh" name="space_needed" comment="Used for habitat capacity logic Distinguishes ground plants from epiphytes Default lifespan for plants Used for habitat capacity logic" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uat0sYCpAVkf7" name="needs_ground" comment="Used for habitat capacity logic Distinguishes ground plants from epiphytes Default lifespan for plants Used for habitat capacity logic Distinguishes ground plants from epiphytes" type="uuZvRER5voAkM"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u3oLrUxmA9EeL" name="reproduction_interval" comment="Used for habitat capacity logic Distinguishes ground plants from epiphytes Default lifespan for plants Used for habitat capacity logic Distinguishes ground plants from epiphytes" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uo7BvFrrzz4Hh" name="rounds_since_reproduction" comment="Used for habitat capacity logic Distinguishes ground plants from epiphytes Default lifespan for plants Used for habitat capacity logic Distinguishes ground plants from epiphytes" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uMGSgEiNUWXqj" name="max_age" comment="Used for habitat capacity logic Distinguishes ground plants from epiphytes Default lifespan for plants Used for habitat capacity logic Distinguishes ground plants from epiphytes Default lifespan for plants" type="uyDey6iEor2tQ"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uHnoShQnhke5Y" name="__init__" comment="Used for habitat capacity logic Distinguishes ground plants from epiphytes Default lifespan for plants" stereotype="constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uWc7QdlkV7DFG" name="name, min_size, ..." visibility="private" type="" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uR9FOxtempmQD" name="grow" comment="Increases size based on growth rate and environmental factors.&#10;RANDOMIZED ASPECT: Growth varies slightly every round (0.7 to 1.3 multiplier) Ensure the plant doesn't exceed its maximum natural size Plants age every time they grow">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uedYGf2Nr89U6" type="uyDey6iEor2tQ" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uu8Yvybm2e0Ga" name="weather_factor" visibility="private" type="uB9ZTyJjsPAzA" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uqaQlJKCpNhZC" name="be_eaten" comment="Reduces size when an animal grazes on the plant.&#10;If size drops below minimum, the plant dies.&#10;Plant died Plant survived">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uPGhKb1HquAqv" type="uuZvRER5voAkM" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ukjcQT2d0kFDz" name="amount" visibility="private" type="uyDey6iEor2tQ" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uPrZbipBbF9fx" name="can_reproduce" comment="Logic for plant spreading. Requires enough size and a cooldown period.&#10;Cooldown check to prevent exponential overgrowth Plant must be mature (80% of max size) to reproduce Reset cooldown">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="utNyI43hZwHVB" type="uuZvRER5voAkM" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u3LJaIGwaYL4b" name="get_info" comment="--- Specialized Plant Classes ---">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uKqljaU8lpg6x" type="uMZ6QyZIKDsho" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="u2B9E0tWKf4OY" name="Tree" comment="    Trees grow large and slowly.&#10;    SPECIAL RULE: They provide Apples for Rabbits and Bears.&#10;    &gt;&gt;&gt; # Testing initialization&#10;    &gt;&gt;&gt; t = Tree(&quot;Appletree_1&quot;)&#10;    &gt;&gt;&gt; t.current_size&#10;    20&#10;    &gt;&gt;&gt; t.space_needed # Trees occupy ground space based on size&#10;    20&#10;    &gt;&gt;&gt; # Test growth with weather factor 1.0&#10;    &gt;&gt;&gt; # Growth rate for Tree is 2&#10;    &gt;&gt;&gt; _ = t.grow(1.0)&#10;    &gt;&gt;&gt; t.current_size&#10;    22&#10;    &gt;&gt;&gt; # Test reproduction check (cooldown is 5 rounds)&#10;    &gt;&gt;&gt; t.can_reproduce()&#10;    False&#10;">
+        <generalization xmi:type="uml:Generalization" xmi:id="uE39Ptxu5SlWu" general="u2GnSq4D0yOeZ"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uBemO329PIY93" name="__init__" stereotype="constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uDADemhD2grmr" name="name, min_size, ..." visibility="private" type="" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="unH9d5LiMsc2U" name="grow">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u4bIMPy51PNtr" name="weather_factor" visibility="private" type="uB9ZTyJjsPAzA" value=""/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uqCa5jvocWHC6" name="Grass" comment="    Grass grows fast but stays small.&#10;    SPECIAL RULE: High drought resistance helps it survive bad weather.&#10;    &gt;&gt;&gt; # Testing initialization and space usage&#10;    &gt;&gt;&gt; g = Grass(&quot;Meadow_1&quot;)&#10;    &gt;&gt;&gt; g.current_size&#10;    2&#10;    &gt;&gt;&gt; g.space_needed # Size 2 = Space 2&#10;    2&#10;    &gt;&gt;&gt; # Test growth with weather factor 1.0&#10;    &gt;&gt;&gt; # Growth rate for Grass is 3&#10;    &gt;&gt;&gt; _ = g.grow(1.0)&#10;    &gt;&gt;&gt; g.current_size&#10;    5&#10;    &gt;&gt;&gt; g.be_eaten(4) # Rabbit eats 4 units&#10;    True&#10;    &gt;&gt;&gt; g.current_size&#10;    1&#10;">
+        <generalization xmi:type="uml:Generalization" xmi:id="unCjF8Wc9CEZJ" general="u2GnSq4D0yOeZ"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uhrsD38Ac2O4l" name="__init__" stereotype="constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uEBx1TA7h1EZu" name="name, min_size, ..." visibility="private" type="" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uIy8pjtDiZcwX" name="grow">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uMu3uT9zpCQTK" name="weather_factor" visibility="private" type="uB9ZTyJjsPAzA" value=""/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uExQ5lH4NW6YW" name="Eucalyptus" comment="    SPECIAL RULE: Toxic to most, only Koalas can eat this.&#10;    &gt;&gt;&gt; # Testing initialization and growth&#10;    &gt;&gt;&gt; e = Eucalyptus(&quot;Euca_1&quot;)&#10;    &gt;&gt;&gt; e.current_size&#10;    10&#10;    &gt;&gt;&gt; e.space_needed&#10;    10&#10;    &gt;&gt;&gt; # Test growth with a standard weather factor of 1.0&#10;    &gt;&gt;&gt; _ = e.grow(1.0)&#10;    &gt;&gt;&gt; e.current_size # Should increase by growth_rate (2)&#10;    12&#10;    &gt;&gt;&gt; e.be_eaten(5) # Koala eats 5 units&#10;    True&#10;    &gt;&gt;&gt; e.current_size&#10;    7&#10;">
+        <generalization xmi:type="uml:Generalization" xmi:id="ubHnO1nZchVUp" general="u2GnSq4D0yOeZ"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ujChJ6njNlk3j" name="__init__" stereotype="constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uWGopBJ5gnP6I" name="name, min_size, ..." visibility="private" type="" value=""/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uTQRbTahUVYoW" name="Apple" comment="    Represents a fruit dropped by a Tree.&#10;    Does not grow or reproduce,&#10;    but serves as a temporary food source on the ground.&#10;    &gt;&gt;&gt; a = Apple()&#10;    &gt;&gt;&gt; a.current_size&#10;    5&#10;    &gt;&gt;&gt; a.space_needed&#10;    0&#10;    &gt;&gt;&gt; a.age&#10;    1&#10;">
+        <generalization xmi:type="uml:Generalization" xmi:id="uv3VZV41G0YSa" general="u2GnSq4D0yOeZ"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u7pTY8R5EYbQl" name="__init__" comment="growth_rate=0: Apples do not increase in size once fallen space_needed=0: Essential so that fruit doesn't block tree growth reproduction_interval=999: Apples cannot create more apples Lifespan in rounds before the apple rots" stereotype="constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uOYYyFfJIcaSb" name="name, min_size, ..." visibility="private" type="" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="umhLaayEephtR" name="grow">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u3kfnjZrt7cCE" name="weather_factor" visibility="private" type="uB9ZTyJjsPAzA" value=""/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uhh5q2NtgxacK" name="Animal" isAbstract="true" comment="    Abstract base class for all mobile creatures.&#10;    &gt;&gt;&gt; a = Rabbit(&quot;TestBunny&quot;)&#10;    &gt;&gt;&gt; a.hunger # Startet satt&#10;    0.0&#10;    &gt;&gt;&gt; a.metabolic_rate # Intervall 1 -&gt; 1.0 Hunger pro Runde&#10;    1.0&#10;    &gt;&gt;&gt; a.grow()&#10;    &gt;&gt;&gt; a.hunger&#10;    1.0&#10;">
+        <generalization xmi:type="uml:Generalization" xmi:id="uQGQuH3A8eMCw" general="uEKtR2ShXotqz"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uXihK8zijVv3m" name="hunger" comment="Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals Default lifespan for animals LOGIC: Instead of fixed hunger values, we calculate a rate. This eliminates 'Magic Numbers' and makes the simulation scalable. Interval 1 (small animals) = 1.0 hunger/round Interval 2 (medium animals) = 0.5 hunger/round Interval 3 (large animals) = 0.33 hunger/round Logic: Named constant for metabolic energy saved during hibernation. This makes it easy to adjust the survival bonus in one central place. Reproduction attributes Current timer (starts at 0) Rounds to wait after having a baby Age needed to be mature enough Maximum hunger allowed to reproduce" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uJpqQylmyg2b3" name="max_hunger" comment="Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals Default lifespan for animals LOGIC: Instead of fixed hunger values, we calculate a rate. This eliminates 'Magic Numbers' and makes the simulation scalable. Interval 1 (small animals) = 1.0 hunger/round Interval 2 (medium animals) = 0.5 hunger/round Interval 3 (large animals) = 0.33 hunger/round Logic: Named constant for metabolic energy saved during hibernation. This makes it easy to adjust the survival bonus in one central place. Reproduction attributes Current timer (starts at 0) Rounds to wait after having a baby Age needed to be mature enough Maximum hunger allowed to reproduce Death occurs if hunger reaches this" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ua8gtZEeSLFas" name="strength" comment="Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals Default lifespan for animals LOGIC: Instead of fixed hunger values, we calculate a rate. This eliminates 'Magic Numbers' and makes the simulation scalable. Interval 1 (small animals) = 1.0 hunger/round Interval 2 (medium animals) = 0.5 hunger/round Interval 3 (large animals) = 0.33 hunger/round Logic: Named constant for metabolic energy saved during hibernation. This makes it easy to adjust the survival bonus in one central place. Reproduction attributes Current timer (starts at 0) Rounds to wait after having a baby Age needed to be mature enough Maximum hunger allowed to reproduce Death occurs if hunger reaches this Used for hunting success or defense" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="upTNslNOVazpT" name="hibernating" comment="Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals Default lifespan for animals LOGIC: Instead of fixed hunger values, we calculate a rate. This eliminates 'Magic Numbers' and makes the simulation scalable. Interval 1 (small animals) = 1.0 hunger/round Interval 2 (medium animals) = 0.5 hunger/round Interval 3 (large animals) = 0.33 hunger/round Logic: Named constant for metabolic energy saved during hibernation. This makes it easy to adjust the survival bonus in one central place. Reproduction attributes Current timer (starts at 0) Rounds to wait after having a baby Age needed to be mature enough Maximum hunger allowed to reproduce Death occurs if hunger reaches this Used for hunting success or defense" type="uuZvRER5voAkM"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uOgg0L5QYLCpW" name="feeding_interval" comment="Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals Default lifespan for animals LOGIC: Instead of fixed hunger values, we calculate a rate. This eliminates 'Magic Numbers' and makes the simulation scalable. Interval 1 (small animals) = 1.0 hunger/round Interval 2 (medium animals) = 0.5 hunger/round Interval 3 (large animals) = 0.33 hunger/round Logic: Named constant for metabolic energy saved during hibernation. This makes it easy to adjust the survival bonus in one central place. Reproduction attributes Current timer (starts at 0) Rounds to wait after having a baby Age needed to be mature enough Maximum hunger allowed to reproduce Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uxXm0Ti1pYGd2" name="rounds_since_eating" comment="Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals Default lifespan for animals LOGIC: Instead of fixed hunger values, we calculate a rate. This eliminates 'Magic Numbers' and makes the simulation scalable. Interval 1 (small animals) = 1.0 hunger/round Interval 2 (medium animals) = 0.5 hunger/round Interval 3 (large animals) = 0.33 hunger/round Logic: Named constant for metabolic energy saved during hibernation. This makes it easy to adjust the survival bonus in one central place. Reproduction attributes Current timer (starts at 0) Rounds to wait after having a baby Age needed to be mature enough Maximum hunger allowed to reproduce Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uzDzQMQdRAdKw" name="max_age" comment="Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals Default lifespan for animals LOGIC: Instead of fixed hunger values, we calculate a rate. This eliminates 'Magic Numbers' and makes the simulation scalable. Interval 1 (small animals) = 1.0 hunger/round Interval 2 (medium animals) = 0.5 hunger/round Interval 3 (large animals) = 0.33 hunger/round Logic: Named constant for metabolic energy saved during hibernation. This makes it easy to adjust the survival bonus in one central place. Reproduction attributes Current timer (starts at 0) Rounds to wait after having a baby Age needed to be mature enough Maximum hunger allowed to reproduce Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals Default lifespan for animals" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uo7NxGb22C0H4" name="metabolic_rate" comment="Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals Default lifespan for animals LOGIC: Instead of fixed hunger values, we calculate a rate. This eliminates 'Magic Numbers' and makes the simulation scalable. Interval 1 (small animals) = 1.0 hunger/round Interval 2 (medium animals) = 0.5 hunger/round Interval 3 (large animals) = 0.33 hunger/round Logic: Named constant for metabolic energy saved during hibernation. This makes it easy to adjust the survival bonus in one central place. Reproduction attributes Current timer (starts at 0) Rounds to wait after having a baby Age needed to be mature enough Maximum hunger allowed to reproduce Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals Default lifespan for animals LOGIC: Instead of fixed hunger values, we calculate a rate. This eliminates 'Magic Numbers' and makes the simulation scalable. Interval 1 (small animals) = 1.0 hunger/round Interval 2 (medium animals) = 0.5 hunger/round Interval 3 (large animals) = 0.33 hunger/round" type="uB9ZTyJjsPAzA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="upQZm1CL90Ol5" name="hibernation_bonus" comment="Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals Default lifespan for animals LOGIC: Instead of fixed hunger values, we calculate a rate. This eliminates 'Magic Numbers' and makes the simulation scalable. Interval 1 (small animals) = 1.0 hunger/round Interval 2 (medium animals) = 0.5 hunger/round Interval 3 (large animals) = 0.33 hunger/round Logic: Named constant for metabolic energy saved during hibernation. This makes it easy to adjust the survival bonus in one central place. Reproduction attributes Current timer (starts at 0) Rounds to wait after having a baby Age needed to be mature enough Maximum hunger allowed to reproduce Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals Default lifespan for animals LOGIC: Instead of fixed hunger values, we calculate a rate. This eliminates 'Magic Numbers' and makes the simulation scalable. Interval 1 (small animals) = 1.0 hunger/round Interval 2 (medium animals) = 0.5 hunger/round Interval 3 (large animals) = 0.33 hunger/round Logic: Named constant for metabolic energy saved during hibernation. This makes it easy to adjust the survival bonus in one central place." type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uqbgZGUyXdTJG" name="repro_cooldown" comment="Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals Default lifespan for animals LOGIC: Instead of fixed hunger values, we calculate a rate. This eliminates 'Magic Numbers' and makes the simulation scalable. Interval 1 (small animals) = 1.0 hunger/round Interval 2 (medium animals) = 0.5 hunger/round Interval 3 (large animals) = 0.33 hunger/round Logic: Named constant for metabolic energy saved during hibernation. This makes it easy to adjust the survival bonus in one central place. Reproduction attributes Current timer (starts at 0) Rounds to wait after having a baby Age needed to be mature enough Maximum hunger allowed to reproduce Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals Default lifespan for animals LOGIC: Instead of fixed hunger values, we calculate a rate. This eliminates 'Magic Numbers' and makes the simulation scalable. Interval 1 (small animals) = 1.0 hunger/round Interval 2 (medium animals) = 0.5 hunger/round Interval 3 (large animals) = 0.33 hunger/round Logic: Named constant for metabolic energy saved during hibernation. This makes it easy to adjust the survival bonus in one central place. Reproduction attributes Current timer (starts at 0)" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uA91tTIEIkJJ3" name="cooldown_duration" comment="Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals Default lifespan for animals LOGIC: Instead of fixed hunger values, we calculate a rate. This eliminates 'Magic Numbers' and makes the simulation scalable. Interval 1 (small animals) = 1.0 hunger/round Interval 2 (medium animals) = 0.5 hunger/round Interval 3 (large animals) = 0.33 hunger/round Logic: Named constant for metabolic energy saved during hibernation. This makes it easy to adjust the survival bonus in one central place. Reproduction attributes Current timer (starts at 0) Rounds to wait after having a baby Age needed to be mature enough Maximum hunger allowed to reproduce Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals Default lifespan for animals LOGIC: Instead of fixed hunger values, we calculate a rate. This eliminates 'Magic Numbers' and makes the simulation scalable. Interval 1 (small animals) = 1.0 hunger/round Interval 2 (medium animals) = 0.5 hunger/round Interval 3 (large animals) = 0.33 hunger/round Logic: Named constant for metabolic energy saved during hibernation. This makes it easy to adjust the survival bonus in one central place. Reproduction attributes Current timer (starts at 0) Rounds to wait after having a baby" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="umKAm0ns2jdUQ" name="min_repro_age" comment="Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals Default lifespan for animals LOGIC: Instead of fixed hunger values, we calculate a rate. This eliminates 'Magic Numbers' and makes the simulation scalable. Interval 1 (small animals) = 1.0 hunger/round Interval 2 (medium animals) = 0.5 hunger/round Interval 3 (large animals) = 0.33 hunger/round Logic: Named constant for metabolic energy saved during hibernation. This makes it easy to adjust the survival bonus in one central place. Reproduction attributes Current timer (starts at 0) Rounds to wait after having a baby Age needed to be mature enough Maximum hunger allowed to reproduce Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals Default lifespan for animals LOGIC: Instead of fixed hunger values, we calculate a rate. This eliminates 'Magic Numbers' and makes the simulation scalable. Interval 1 (small animals) = 1.0 hunger/round Interval 2 (medium animals) = 0.5 hunger/round Interval 3 (large animals) = 0.33 hunger/round Logic: Named constant for metabolic energy saved during hibernation. This makes it easy to adjust the survival bonus in one central place. Reproduction attributes Current timer (starts at 0) Rounds to wait after having a baby Age needed to be mature enough" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ulwx2jmpQ48We" name="hunger_threshold" comment="Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals Default lifespan for animals LOGIC: Instead of fixed hunger values, we calculate a rate. This eliminates 'Magic Numbers' and makes the simulation scalable. Interval 1 (small animals) = 1.0 hunger/round Interval 2 (medium animals) = 0.5 hunger/round Interval 3 (large animals) = 0.33 hunger/round Logic: Named constant for metabolic energy saved during hibernation. This makes it easy to adjust the survival bonus in one central place. Reproduction attributes Current timer (starts at 0) Rounds to wait after having a baby Age needed to be mature enough Maximum hunger allowed to reproduce Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals Default lifespan for animals LOGIC: Instead of fixed hunger values, we calculate a rate. This eliminates 'Magic Numbers' and makes the simulation scalable. Interval 1 (small animals) = 1.0 hunger/round Interval 2 (medium animals) = 0.5 hunger/round Interval 3 (large animals) = 0.33 hunger/round Logic: Named constant for metabolic energy saved during hibernation. This makes it easy to adjust the survival bonus in one central place. Reproduction attributes Current timer (starts at 0) Rounds to wait after having a baby Age needed to be mature enough Maximum hunger allowed to reproduce" type="uyDey6iEor2tQ"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uq5NuAzcIg0Jd" name="__init__" comment="Death occurs if hunger reaches this Used for hunting success or defense Rounds between meals Default lifespan for animals LOGIC: Instead of fixed hunger values, we calculate a rate. This eliminates 'Magic Numbers' and makes the simulation scalable. Interval 1 (small animals) = 1.0 hunger/round Interval 2 (medium animals) = 0.5 hunger/round Interval 3 (large animals) = 0.33 hunger/round Logic: Named constant for metabolic energy saved during hibernation. This makes it easy to adjust the survival bonus in one central place. Reproduction attributes Current timer (starts at 0) Rounds to wait after having a baby Age needed to be mature enough Maximum hunger allowed to reproduce" stereotype="constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uKuYH9EJ1d2aP" name="name, hunger, ..." visibility="private" type="" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uOAVgaSYfAz9O" name="eat" isAbstract="true" comment="Each animal type has a different way of finding food.">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uGBlSg84pAoQa" name="habitat" visibility="private" type="u9OmGItKhHptN" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uQqOsweQnRZNg" name="check_starvation" comment="Kills the animal if it hasn't eaten enough.">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ucFkbHlWWS7dj" type="uuZvRER5voAkM" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uZWcMFY5tOhMz" name="enter_hibernation" comment="Logic: Reduce hunger by the defined bonus to simulate slower metabolism"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uhlFL4g02lwAQ" name="wake_up" comment="Wakes the animal from hibernation."/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uohpJLBw38NyX" name="grow" comment="Increments age and calculates hunger increase based on metabolism.&#10;Logic: We use the precalculated rate dependend on size/interval. This ensure consistent hunger growth."/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u3wSlRO9C7BaG" name="can_reproduce" comment="Standard reproduction logic for all animals.">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uETYClhkjgb0f" type="uuZvRER5voAkM" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uEm713WnFgv57" name="check_aging" comment="Died of old age">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uO0LHcHUfW437" type="uuZvRER5voAkM" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="umsFRoR96XmpJ" name="Herbivore" comment="    Eats plants. Found in the habitat's plant list.&#10;    &gt;&gt;&gt; # Testing the basic attributes of a Herbivore using a Rabbit&#10;    &gt;&gt;&gt; h = Rabbit(&quot;Thumper&quot;)&#10;    &gt;&gt;&gt; h.strength&#10;    2&#10;    &gt;&gt;&gt; # Most small herbivores have a feeding_interval of 1&#10;    &gt;&gt;&gt; h.metabolic_rate&#10;    1.0&#10;    &gt;&gt;&gt; h.hunger&#10;    0.0&#10;    &gt;&gt;&gt; h.grow()&#10;    &gt;&gt;&gt; h.hunger&#10;    1.0&#10;">
+        <generalization xmi:type="uml:Generalization" xmi:id="uQ3loIF3nHHAs" general="uhh5q2NtgxacK"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u3KId3Cjg0rL5" name="eat" comment="We store conditions in descriptive variables for better readability Early Exit: If the animal is asleep or not hungry yet, we stop here Search for any edible plant in the environment 'p' is our placeholder for each plant in the list Try to eat the plant Plant died from overgrazing, remove it">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uFm9qL7klLBSG" type="uuZvRER5voAkM" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uwi5Z8R1hiuaU" name="habitat" visibility="private" type="u9OmGItKhHptN" value=""/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uafw02rT0a2uW" name="Carnivore" comment="    Hunts other animals.&#10;    &gt;&gt;&gt; # Testing the basic attributes of a Carnivore&#10;    &gt;&gt;&gt; c = Wolf(&quot;Isegrim&quot;)&#10;    &gt;&gt;&gt; c.strength&#10;    10&#10;    &gt;&gt;&gt; # Carnivores typically have a feeding_interval of 2&#10;    &gt;&gt;&gt; c.metabolic_rate&#10;    0.5&#10;    &gt;&gt;&gt; c.hunger&#10;    0.0&#10;    &gt;&gt;&gt; c.grow()&#10;    &gt;&gt;&gt; c.hunger&#10;    0.5&#10;">
+        <generalization xmi:type="uml:Generalization" xmi:id="uTq51TWE4Imhc" general="uhh5q2NtgxacK"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uqJORZDA0K6EG" name="hunt_skill" comment="Individual hunting ability Hunger reduction per successful hunt Individual hunting ability" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uutUo5uKGwSsr" name="meat_reward" comment="Individual hunting ability Hunger reduction per successful hunt Individual hunting ability Hunger reduction per successful hunt" type="uyDey6iEor2tQ"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uNCpisua1IVev" name="__init__" comment="Individual hunting ability Hunger reduction per successful hunt" stereotype="constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="um3GKSLgyLkrN" name="name, max_hunger, ..." visibility="private" type="" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uRtBQZdfqym9Z" name="eat" comment="If the carnivore is asleep or still full, it won't hunt Look for prey (any living animal that isn't a carnivore) Ensure population control: only hunt if more than 3 of the Ensure there's enough of the species Safety Check: If no prey is found, stop here (prevents IndexError) RANDOMIZED ASPECT: Seasonal hunting success Seasons modify how easy it is to find prey Animal is consumed">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ukiFPnGp5sxzL" type="uuZvRER5voAkM" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u0RAWszpStMAx" name="habitat" visibility="private" type="u9OmGItKhHptN" value=""/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uMbfO8fDCs326" name="random"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="u3ZGSLOnkH7bk" name="Omnivore" comment="&quot;&quot;&#10;    Omnivore - A flexible eater that chooses between plants and meat&#10;    based on its current hunger level.&#10;    &gt;&gt;&gt; # Example using a Bear as a concrete Omnivore&#10;    &gt;&gt;&gt; b = Bear(&quot;Baloo&quot;)&#10;    &gt;&gt;&gt; b.metabolic_rate # Interval 3 -&gt; 0.33 hunger per round&#10;    0.33&#10;    &gt;&gt;&gt; b.hunger = 0.0&#10;    &gt;&gt;&gt; b.grow()&#10;    &gt;&gt;&gt; round(b.hunger, 2)&#10;    0.33&#10;    &gt;&gt;&gt; b.strength&#10;    10&#10;">
+        <generalization xmi:type="uml:Generalization" xmi:id="ujJnrPhm3hU0s" general="uhh5q2NtgxacK"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u31fl7FfTb7sy" name="plant_bite_size" comment="Define the bite size once for the whole class Define the bite size once for the whole class" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uNGbkaqXrQ3G5" name="meat_reward" comment="Define the bite size once for the whole class Define the bite size once for the whole class" type="uyDey6iEor2tQ"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ub3QcXLkeDGPE" name="__init__" comment="Define the bite size once for the whole class" stereotype="constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ubZOEkr6zJTxd" name="name, max_hunger, ..." visibility="private" type="" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uVhBWKDXYDElV" name="eat" comment="Early Exit: If the animal shouldn't eat, stop here Logic: If very hungry, try to hunt (more calories). Else, eat plants. Hunting logic (similar to Carnivore) Criteria: must be alive, cannot be itself, and must be weaker The hunt is only possible if all criteria are met Select a random food source from the available plants Interaction: Reduce plant size by the omnivore's specific bite size Update animal stats: decrease hunger and reset the feeding timer Return False if no food was found or if the animal chose not to eat --- Specialized Animal Classes ---">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u4WDJlUwq4CUt" type="uuZvRER5voAkM" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uVZe6csYAAViu" name="habitat" visibility="private" type="u9OmGItKhHptN" value=""/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uOtFfLoVmvbBb" name="Rabbit" comment="    SPECIAL RULE: Fast metabolism, reproduces quickly.&#10;    &gt;&gt;&gt; r = Rabbit(&quot;Bugs&quot;)&#10;    &gt;&gt;&gt; r.hunger&#10;    0.0&#10;    &gt;&gt;&gt; r.metabolic_rate&#10;    1.0&#10;    &gt;&gt;&gt; r.grow() # After one round, hunger should be 1.0&#10;    &gt;&gt;&gt; r.hunger&#10;    1.0&#10;    &gt;&gt;&gt; r.max_hunger&#10;    6&#10;    &gt;&gt;&gt; r.cooldown_duration # Quick reproduction cycle&#10;    3&#10;">
+        <generalization xmi:type="uml:Generalization" xmi:id="umar3blXUizGB" general="umsFRoR96XmpJ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uJRC4EAI9GKAk" name="repro_cooldown" comment="These attributes define the reproduction strategy of the rabbit. We override the defaults from the Animal base class. Rounds to wait after having babies Age needed to reach sexual maturity Maximum hunger allowed to reproduce These attributes define the reproduction strategy of the rabbit. We override the defaults from the Animal base class." type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uLj9M7F8cQGZA" name="cooldown_duration" comment="These attributes define the reproduction strategy of the rabbit. We override the defaults from the Animal base class. Rounds to wait after having babies Age needed to reach sexual maturity Maximum hunger allowed to reproduce These attributes define the reproduction strategy of the rabbit. We override the defaults from the Animal base class. Rounds to wait after having babies" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uVkABQhbnqdXS" name="min_repro_age" comment="These attributes define the reproduction strategy of the rabbit. We override the defaults from the Animal base class. Rounds to wait after having babies Age needed to reach sexual maturity Maximum hunger allowed to reproduce These attributes define the reproduction strategy of the rabbit. We override the defaults from the Animal base class. Rounds to wait after having babies Age needed to reach sexual maturity" type="uyDey6iEor2tQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u2RXZxfEOYD9v" name="hunger_threshold" comment="These attributes define the reproduction strategy of the rabbit. We override the defaults from the Animal base class. Rounds to wait after having babies Age needed to reach sexual maturity Maximum hunger allowed to reproduce These attributes define the reproduction strategy of the rabbit. We override the defaults from the Animal base class. Rounds to wait after having babies Age needed to reach sexual maturity Maximum hunger allowed to reproduce" type="uyDey6iEor2tQ"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uxuZZIQJYAxDo" name="__init__" comment="These attributes define the reproduction strategy of the rabbit. We override the defaults from the Animal base class. Rounds to wait after having babies Age needed to reach sexual maturity Maximum hunger allowed to reproduce" stereotype="constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ucg88kWvMqxQR" name="name, mas_hunger, ..." visibility="private" type="" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uBsSCErLOSwav" name="can_reproduce" comment="Rabbits need to be adult and not starving to reproduce Logic: Rabbits need to be mature and not too hungry.">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u7GiR4v77Xa2V" type="uuZvRER5voAkM" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="u8RKPAuYXl9xI" name="Koala" comment="    SPECIAL RULE: Diet specialist.&#10;    Only searches for Eucalyptus objects in the habitat.&#10;    &gt;&gt;&gt; k = Koala(&quot;Sid&quot;)&#10;    &gt;&gt;&gt; k.hunger&#10;    0.0&#10;    &gt;&gt;&gt; k.metabolic_rate&#10;    0.5&#10;    &gt;&gt;&gt; # After 2 rounds of growing without eating, hunger should be 1.0&#10;    &gt;&gt;&gt; k.grow()&#10;    &gt;&gt;&gt; k.grow()&#10;    &gt;&gt;&gt; k.hunger&#10;    1.0&#10;    &gt;&gt;&gt; k.max_hunger&#10;    8&#10;">
+        <generalization xmi:type="uml:Generalization" xmi:id="uYjAcpqbpMyod" general="umsFRoR96XmpJ"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="unfKxHC1PLZph" name="__init__" stereotype="constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uhrgGfSxdvbcc" name="name, max_hunger, ..." visibility="private" type="" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ucNcSUmy8cXvV" name="eat" comment="Koala specific eating logic...">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uJEi9kUeJl8aW" type="uuZvRER5voAkM" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uNvhtLWXA2Hm1" name="habitat" visibility="private" type="u9OmGItKhHptN" value=""/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="ulthyshyN5B3H" name="Bear" comment="    SPECIAL RULE: Hibernation.&#10;    Enters a state of sleep during Winter rounds where it doesn't eat.&#10;    &gt;&gt;&gt; b = Bear(&quot;Baloo&quot;)&#10;    &gt;&gt;&gt; b.hunger = 5.0&#10;    &gt;&gt;&gt; b.hibernating&#10;    False&#10;    &gt;&gt;&gt; b.prepare_hibernation(&quot;Winter&quot;) # Gehe in den Winterschlaf&#10;    &gt;&gt;&gt; b.hibernating&#10;    True&#10;    &gt;&gt;&gt; b.hunger # Hunger sollte um den hibernation_bonus (2) sinken&#10;    3.0&#10;    &gt;&gt;&gt; b.prepare_hibernation(&quot;Spring&quot;) # Wache im FrÃ¼hling auf&#10;    &gt;&gt;&gt; b.hibernating&#10;    False&#10;">
+        <generalization xmi:type="uml:Generalization" xmi:id="urZGNLLOEA3AS" general="u3ZGSLOnkH7bk"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uMvtkJMnMjbL9" name="__init__" stereotype="constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uPoLZRZD6bpF7" name="name, max_hunger, ..." visibility="private" type="" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u5bDwdqSGIGki" name="prepare_hibernation">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u0HMs1qGypX0A" name="season" visibility="private" type="uMZ6QyZIKDsho" value=""/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="usEBsPATheNqK" name="Wolf">
+        <generalization xmi:type="uml:Generalization" xmi:id="u15lq0JESxHJj" general="uafw02rT0a2uW"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u9qNqmBnwTI2q" name="__init__">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uDbdGTxSaYIGZ" name="name, max_hunger, ..." visibility="private" type="" value=""/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uBZUNG0dhoaxB" name="new_class"/>
+      <xmi:Extension extender="umbrello">
+        <diagrams resolution="192">
+          <diagram xmi.id="uSDrTy13wxxG1" name="class diagram" type="1" documentation="" backgroundcolor="#ffffff" usebackgroundcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" griddotcolor="#d3d3d3" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showdocumentation="0" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="75.6522" canvasheight="1386.58" canvaswidth="2752.22" isopen="1">
+            <widgets>
+              <classwidget xmi.id="u2B9E0tWKf4OY" localid="uDGo46ITJ38EO" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="50" y="853.895" width="454" height="87" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601" showdocumentation="0"/>
+              <classwidget xmi.id="u2GnSq4D0yOeZ" localid="uHlAovMLv9leK" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="149.838" y="391.772" width="454" height="375" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601" showdocumentation="0" drawascircle="0"/>
+              <classwidget xmi.id="uqCa5jvocWHC6" localid="uovmYnDN9XcTR" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="53.968" y="996.725" width="454" height="87" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601" showdocumentation="0"/>
+              <classwidget xmi.id="uExQ5lH4NW6YW" localid="uDyfVQ3zilSKR" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="64.548" y="1154.1" width="454" height="62" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601" showdocumentation="0"/>
+              <classwidget xmi.id="uOtFfLoVmvbBb" localid="uokKq4eR5qxxR" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="707.283" y="1045.66" width="490" height="175" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601" showdocumentation="0"/>
+              <classwidget xmi.id="uEKtR2ShXotqz" localid="uM1ULaitwkYDu" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="1163.5" y="50" width="354" height="200" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601" showdocumentation="0" drawascircle="0"/>
+              <classwidget xmi.id="u3ZGSLOnkH7bk" localid="uZbIAxgh8I7VP" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="2188.49" y="894.892" width="491" height="125" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601" showdocumentation="0"/>
+              <classwidget xmi.id="ulthyshyN5B3H" localid="ua8MMGLC8yKCh" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="2261.22" y="1221.55" width="491" height="87" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601" showdocumentation="0"/>
+              <classwidget xmi.id="u8RKPAuYXl9xI" localid="uw9RNRsOtHgCj" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="875.24" y="1291.64" width="491" height="87" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601" showdocumentation="0"/>
+              <classwidget xmi.id="uTQRbTahUVYoW" localid="uNuSUbXKJXue8" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="73.805" y="1299.58" width="454" height="87" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601" showdocumentation="0"/>
+              <classwidget xmi.id="uhh5q2NtgxacK" localid="u3584gEgLQcRG" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="2007.49" y="281.649" width="441" height="550" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601" showdocumentation="0" drawascircle="0"/>
+              <classwidget xmi.id="umsFRoR96XmpJ" localid="uudZ0dPP69z6X" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="1233.64" y="914.73" width="290" height="62" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601" showdocumentation="0"/>
+              <classwidget xmi.id="uafw02rT0a2uW" localid="uDRHL0GRqaI4N" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="1643.61" y="902.827" width="491" height="125" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601" showdocumentation="0"/>
+              <classwidget xmi.id="u9OmGItKhHptN" localid="ubotN6tJVl2sX" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="1135.77" y="420.115" width="407" height="400" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601" showdocumentation="0"/>
+              <classwidget xmi.id="usEBsPATheNqK" localid="uHZm6G4T9Fn06" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="1855.21" y="1263.87" width="355" height="62" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601" showdocumentation="0"/>
+            </widgets>
+            <messages/>
+            <associations>
+              <assocwidget xmi.id="uYjAcpqbpMyod" localid="ufgHVb7ZsRTcL" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="500" widgetaid="u8RKPAuYXl9xI" widgetbid="umsFRoR96XmpJ" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="1149.55" starty="1291.64"/>
+                  <endpoint endx="1358.11" endy="976.73"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="u15lq0JESxHJj" localid="u96LZ4ER2hP2M" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="500" widgetaid="usEBsPATheNqK" widgetbid="uafw02rT0a2uW" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="2019.2" starty="1263.87"/>
+                  <endpoint endx="1916.34" endy="1027.83"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="urZGNLLOEA3AS" localid="uJMqiM0GZNatT" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="500" widgetaid="ulthyshyN5B3H" widgetbid="u3ZGSLOnkH7bk" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="2496.43" starty="1221.55"/>
+                  <endpoint endx="2448.76" endy="1019.89"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uTq51TWE4Imhc" localid="uZGB4hh2UQs9r" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="500" widgetaid="uafw02rT0a2uW" widgetbid="uhh5q2NtgxacK" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="1940.93" starty="902.827"/>
+                  <endpoint endx="2007.49" endy="822.56"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uyX70wQf1d7gz" localid="u7Wynp8agvGy3" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="510" visibilityA="0" visibilityB="0" changeabilityA="900" changeabilityB="900" widgetaid="u9OmGItKhHptN" widgetbid="uEKtR2ShXotqz" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="u0iKMCdQWmfqO" localid="uLfLzJWzVAwM7" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="1318.05" y="389.245" width="19" height="29" isinstance="0" showstereotype="2" text="1" pretext="" posttext="" role="701"/>
+                <floatingtext xmi.id="unxX8HBRNOATb" localid="u8pbb2XU9rRlY" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="1342.05" y="252.245" width="42" height="29" isinstance="0" showstereotype="2" text="0..*" pretext="" posttext="" role="702"/>
+                <floatingtext xmi.id="uuHZhx936oEn1" localid="uzfWVg2f22EJF" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="1201.61" y="253.613" width="117" height="29" isinstance="0" showstereotype="2" text="inhabitant" pretext="+" posttext="" role="710"/>
+                <linepath layout="Direct">
+                  <startpoint startx="1339.8" starty="420.115"/>
+                  <endpoint endx="1340.24" endy="250"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="umar3blXUizGB" localid="uQG3ZJHDRBz7B" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="500" widgetaid="uOtFfLoVmvbBb" widgetbid="umsFRoR96XmpJ" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="1151.33" starty="1045.66"/>
+                  <endpoint endx="1308.12" endy="976.73"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="ujJnrPhm3hU0s" localid="uBDwRnJV2nLb1" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="500" widgetaid="u3ZGSLOnkH7bk" widgetbid="uhh5q2NtgxacK" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="2401.86" starty="894.892"/>
+                  <endpoint endx="2369.34" endy="831.649"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uE39Ptxu5SlWu" localid="u0Hm3BOsLurPq" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="500" widgetaid="u2B9E0tWKf4OY" widgetbid="u2GnSq4D0yOeZ" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="290.652" starty="853.895"/>
+                  <endpoint endx="317.994" endy="766.773"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="unCjF8Wc9CEZJ" localid="uPbdp2XrSbGOi" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="500" widgetaid="uqCa5jvocWHC6" widgetbid="u2GnSq4D0yOeZ" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="290.015" starty="996.725"/>
+                  <endpoint endx="337.841" endy="766.773"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uin6nSMwbww0T" localid="uLXZsnOObHkMq" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="500" widgetaid="u2GnSq4D0yOeZ" widgetbid="uEKtR2ShXotqz" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="603.838" starty="478.154"/>
+                  <endpoint endx="1163.5" endy="228.846"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="ubHnO1nZchVUp" localid="ufZn5HLThlbvg" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="500" widgetaid="uExQ5lH4NW6YW" widgetbid="u2GnSq4D0yOeZ" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="295.912" starty="1154.1"/>
+                  <endpoint endx="350.441" endy="766.773"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uv3VZV41G0YSa" localid="uKrUEQCRWVVjX" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="500" widgetaid="uTQRbTahUVYoW" widgetbid="u2GnSq4D0yOeZ" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="305.135" starty="1299.58"/>
+                  <endpoint endx="358.173" endy="766.773"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uQGQuH3A8eMCw" localid="ur07fwOYjdl5P" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="500" widgetaid="uhh5q2NtgxacK" widgetbid="uEKtR2ShXotqz" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="2007.49" starty="455.616"/>
+                  <endpoint endx="1517.5" endy="231.101"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uQ3loIF3nHHAs" localid="utHVSazj1sTZN" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="500" widgetaid="umsFRoR96XmpJ" widgetbid="uhh5q2NtgxacK" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="1446.31" starty="914.73"/>
+                  <endpoint endx="2007.49" endy="657.657"/>
+                </linepath>
+              </assocwidget>
+            </associations>
+          </diagram>
+        </diagrams>
+      </xmi:Extension>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="Use_Case_View" name="Use Case View" stereotype="folder"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Component_View" name="Component View" stereotype="folder"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Deployment_View" name="Deployment View" stereotype="folder"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Entity_Relationship_Model" name="Entity Relationship Model" stereotype="folder"/>
+  </uml:Model>
+  <xmi:Extension extender="umbrello">
+    <docsettings viewid="uSDrTy13wxxG1" documentation="" uniqueid="uSZ4Gr8NGGsoC"/>
+    <listview>
+      <listitem id="Views" type="800" open="1">
+        <listitem id="Component_View" type="821" open="1"/>
+        <listitem id="Deployment_View" type="827" open="1"/>
+        <listitem id="Entity_Relationship_Model" type="836" open="1"/>
+        <listitem id="Logical_View" type="801" open="1">
+          <listitem id="uhh5q2NtgxacK" type="813" open="0">
+            <listitem id="uq5NuAzcIg0Jd" type="815" open="0"/>
+            <listitem id="u3wSlRO9C7BaG" type="815" open="0"/>
+            <listitem id="uEm713WnFgv57" type="815" open="0"/>
+            <listitem id="uQqOsweQnRZNg" type="815" open="0"/>
+            <listitem id="uA91tTIEIkJJ3" type="814" open="0"/>
+            <listitem id="uOAVgaSYfAz9O" type="815" open="0"/>
+            <listitem id="uZWcMFY5tOhMz" type="815" open="0"/>
+            <listitem id="uOgg0L5QYLCpW" type="814" open="0"/>
+            <listitem id="uohpJLBw38NyX" type="815" open="0"/>
+            <listitem id="upTNslNOVazpT" type="814" open="0"/>
+            <listitem id="upQZm1CL90Ol5" type="814" open="0"/>
+            <listitem id="uXihK8zijVv3m" type="814" open="0"/>
+            <listitem id="ulwx2jmpQ48We" type="814" open="0"/>
+            <listitem id="uzDzQMQdRAdKw" type="814" open="0"/>
+            <listitem id="uJpqQylmyg2b3" type="814" open="0"/>
+            <listitem id="uo7NxGb22C0H4" type="814" open="0"/>
+            <listitem id="umKAm0ns2jdUQ" type="814" open="0"/>
+            <listitem id="uqbgZGUyXdTJG" type="814" open="0"/>
+            <listitem id="uxXm0Ti1pYGd2" type="814" open="0"/>
+            <listitem id="ua8gtZEeSLFas" type="814" open="0"/>
+            <listitem id="uhlFL4g02lwAQ" type="815" open="0"/>
+          </listitem>
+          <listitem id="uTQRbTahUVYoW" type="813" open="1">
+            <listitem id="u7pTY8R5EYbQl" type="815" open="0"/>
+            <listitem id="umhLaayEephtR" type="815" open="0"/>
+          </listitem>
+          <listitem id="ulthyshyN5B3H" type="813" open="0">
+            <listitem id="uMvtkJMnMjbL9" type="815" open="0"/>
+            <listitem id="u5bDwdqSGIGki" type="815" open="0"/>
+          </listitem>
+          <listitem id="uafw02rT0a2uW" type="813" open="0">
+            <listitem id="uNCpisua1IVev" type="815" open="0"/>
+            <listitem id="uRtBQZdfqym9Z" type="815" open="0"/>
+            <listitem id="uqJORZDA0K6EG" type="814" open="0"/>
+            <listitem id="uutUo5uKGwSsr" type="814" open="0"/>
+          </listitem>
+          <listitem id="uSDrTy13wxxG1" type="807" label="class diagram" open="0"/>
+          <listitem id="Datatypes" type="830" open="0">
+            <listitem id="uIGfgkLVwodcA" type="829" open="0"/>
+            <listitem id="uuZvRER5voAkM" type="829" open="1"/>
+            <listitem id="ux2djTHZXLuP0" type="829" open="1"/>
+            <listitem id="uiU5oenAjj4HL" type="829" open="1"/>
+            <listitem id="uDAg825KeYTmd" type="829" open="1"/>
+            <listitem id="uMZ6QyZIKDsho" type="829" open="0"/>
+            <listitem id="uNO6IdPYwnTMx" type="829" open="1"/>
+          </listitem>
+          <listitem id="uExQ5lH4NW6YW" type="813" open="0">
+            <listitem id="ujChJ6njNlk3j" type="815" open="0"/>
+          </listitem>
+          <listitem id="uqCa5jvocWHC6" type="813" open="1">
+            <listitem id="uhrsD38Ac2O4l" type="815" open="0"/>
+            <listitem id="uIy8pjtDiZcwX" type="815" open="0"/>
+          </listitem>
+          <listitem id="u9OmGItKhHptN" type="813" open="1">
+            <listitem id="uNtFXaBW8KWiR" type="815" open="0"/>
+            <listitem id="u9kwrTSdEtejA" type="815" open="0"/>
+            <listitem id="uuzVxTuSN01YJ" type="814" open="0"/>
+            <listitem id="uCV976gqoQhW3" type="815" open="0"/>
+            <listitem id="usLVAo0wALgqo" type="815" open="0"/>
+            <listitem id="uyX70wQf1d7gz" type="814" open="0"/>
+            <listitem id="uPMCVBJLGCsfp" type="814" open="0"/>
+            <listitem id="uMrhK8gvwqI41" type="815" open="0"/>
+            <listitem id="uulqdjTBBSHUC" type="815" open="0"/>
+            <listitem id="u8njX44PGG2jZ" type="814" open="0"/>
+            <listitem id="u9uA0U1RkQr9Y" type="814" open="0"/>
+            <listitem id="u4aFGsDVVsHNw" type="815" open="0"/>
+            <listitem id="uXcZKLHHBXw4n" type="814" open="0"/>
+            <listitem id="uFpQLcCCUS6kx" type="814" open="0"/>
+            <listitem id="uBpF5ntgXxSCU" type="814" open="0"/>
+          </listitem>
+          <listitem id="umsFRoR96XmpJ" type="813" open="0">
+            <listitem id="u3KId3Cjg0rL5" type="815" open="0"/>
+          </listitem>
+          <listitem id="u8RKPAuYXl9xI" type="813" open="0">
+            <listitem id="unfKxHC1PLZph" type="815" open="0"/>
+            <listitem id="ucNcSUmy8cXvV" type="815" open="0"/>
+          </listitem>
+          <listitem id="uEKtR2ShXotqz" type="813" open="0">
+            <listitem id="uNptNnXAOb25M" type="815" open="0"/>
+            <listitem id="uf3OGVFk2ixAk" type="814" open="0"/>
+            <listitem id="umxYh4orZhsvK" type="815" open="0"/>
+            <listitem id="u76hGoDbf6Ap0" type="815" open="0"/>
+            <listitem id="uGwOyFMSDn1T2" type="815" open="0"/>
+            <listitem id="urgluXvWtj8xv" type="814" open="0"/>
+            <listitem id="uFmkRjYB3QNPi" type="814" open="0"/>
+          </listitem>
+          <listitem id="uBZUNG0dhoaxB" type="813" open="1"/>
+          <listitem id="u3ZGSLOnkH7bk" type="813" open="0">
+            <listitem id="ub3QcXLkeDGPE" type="815" open="0"/>
+            <listitem id="uVhBWKDXYDElV" type="815" open="0"/>
+            <listitem id="uNGbkaqXrQ3G5" type="814" open="0"/>
+            <listitem id="u31fl7FfTb7sy" type="814" open="0"/>
+          </listitem>
+          <listitem id="u2GnSq4D0yOeZ" type="813" open="0">
+            <listitem id="uHnoShQnhke5Y" type="815" open="0"/>
+            <listitem id="uqaQlJKCpNhZC" type="815" open="0"/>
+            <listitem id="uPrZbipBbF9fx" type="815" open="0"/>
+            <listitem id="uk8No7imfLHYk" type="814" open="0"/>
+            <listitem id="u3LJaIGwaYL4b" type="815" open="0"/>
+            <listitem id="uR9FOxtempmQD" type="815" open="0"/>
+            <listitem id="uv2PWNS0h2uwg" type="814" open="0"/>
+            <listitem id="uMGSgEiNUWXqj" type="814" open="0"/>
+            <listitem id="ux1j38fZ6yQQ3" type="814" open="0"/>
+            <listitem id="u4NThrAgYbgTC" type="814" open="0"/>
+            <listitem id="uat0sYCpAVkf7" type="814" open="0"/>
+            <listitem id="u3oLrUxmA9EeL" type="814" open="0"/>
+            <listitem id="uo7BvFrrzz4Hh" type="814" open="0"/>
+            <listitem id="uWPNmecgMOYrh" type="814" open="0"/>
+          </listitem>
+          <listitem id="uOtFfLoVmvbBb" type="813" open="0">
+            <listitem id="uxuZZIQJYAxDo" type="815" open="0"/>
+            <listitem id="uBsSCErLOSwav" type="815" open="0"/>
+            <listitem id="uLj9M7F8cQGZA" type="814" open="0"/>
+            <listitem id="u2RXZxfEOYD9v" type="814" open="0"/>
+            <listitem id="uVkABQhbnqdXS" type="814" open="0"/>
+            <listitem id="uJRC4EAI9GKAk" type="814" open="0"/>
+          </listitem>
+          <listitem id="uMbfO8fDCs326" type="813" open="1"/>
+          <listitem id="u2B9E0tWKf4OY" type="813" open="1">
+            <listitem id="uBemO329PIY93" type="815" open="0"/>
+            <listitem id="unH9d5LiMsc2U" type="815" open="0"/>
+          </listitem>
+          <listitem id="usEBsPATheNqK" type="813" open="1">
+            <listitem id="u9qNqmBnwTI2q" type="815" open="0"/>
+          </listitem>
+        </listitem>
+        <listitem id="Use_Case_View" type="802" open="1"/>
+      </listitem>
+    </listview>
+    <codegeneration>
+      <codegenerator language="Python">
+        <sourcecode id="uNtFXaBW8KWiR" value="self.total_space=total_space&#10;self.used_space=0&#10;self.plants=[]&#10;self.animals=[]&#10;self.round_counter=0&#10;self.season=&quot;Spring&quot;&#10;self.weather_factor=1.0&#10;"/>
+        <sourcecode id="u9kwrTSdEtejA" value="if plant.needs_ground:&#10;  if self.used_space+plant.space_needed&lt;=self.total_space:&#10;    self.plants.append(plant)&#10;    self.used_space+=plant.space_needed&#10;    return True&#10;&#10;  return False&#10;&#10;"/>
+        <sourcecode id="uulqdjTBBSHUC" value="if plant in self.plants:&#10;  self.plants.remove(plant)&#10;  if plant.needs_ground:&#10;    self.used_space-=plant.space_needed&#10;&#10;&#10;"/>
+        <sourcecode id="uMrhK8gvwqI41" value="if animal in self.animals:&#10;  self.animals.remove(animal)&#10;&#10;"/>
+        <sourcecode id="uCV976gqoQhW3" value="seasons=[&quot;Spring&quot;,&quot;Summer&quot;,&quot;Autumn&quot;,&quot;Winter&quot;]&#10;if self.round_counter&gt;0 and self.round_counter%10==0:&#10;  current_idx=seasons.index(self.season)&#10;  self.season=seasons[(current_idx+1)%4]&#10;  factors={&#10;  &quot;Spring&quot;:1.1,&quot;Summer&quot;:1.3,&#10;  &quot;Autumn&quot;:0.9,&quot;Winter&quot;:0.6}&#10;  self.weather_factor=factors[self.season]&#10;&#10;"/>
+        <sourcecode id="usLVAo0wALgqo" value="if self.used_space&gt;self.total_space*0.9:&#10;  ground_plants=[p for p in self.plants if p.needs_ground]&#10;  if ground_plants:&#10;    ground_plants.sort(key=lambda p:p.current_size)&#10;    num_to_remove=max(1,len(ground_plants)//10)&#10;    for i in range(num_to_remove):&#10;      plant=ground_plants[i]&#10;      plant.die()&#10;      self.remove_plant(plant)&#10;&#10;&#10;&#10;"/>
+        <sourcecode id="u4aFGsDVVsHNw" value="self.round_counter+=1&#10;self.change_season()&#10;self.check_space_competition()&#10;for plant in self.plants[:]:&#10;  result=plant.grow(self.weather_factor)&#10;  if not plant.is_alive:&#10;    self.remove_plant(plant)&#10;    continue&#10;&#10;  if isinstance(result,Apple):&#10;    self.add_plant(result)&#10;&#10;  if plant.can_reproduce()and random.random()&lt;0.2:&#10;    offspring=type(plant)(f&quot;{plant.name}_child&quot;)&#10;    self.add_plant(offspring)&#10;&#10;&#10;for animal in self.animals[:]:&#10;  if animal.is_alive:&#10;    if isinstance(animal,Bear):&#10;      animal.prepare_hibernation(self.season)&#10;&#10;    animal.grow()&#10;    if animal.age&gt;animal.max_age:&#10;      print(f&quot;{animal.name} died of old age.&quot;)&#10;      animal.is_alive=False&#10;&#10;    else:&#10;      animal.eat(self)&#10;&#10;    if animal.is_alive and animal.can_reproduce():&#10;      offspring=type(animal)(f&quot;{animal.name}_baby&quot;)&#10;      self.animals.append(offspring)&#10;&#10;    if animal.check_starvation():&#10;      if animal in self.animals:&#10;        self.animals.remove(animal)&#10;&#10;&#10;&#10;  else:&#10;    if animal in self.animals:&#10;      self.animals.remove(animal)&#10;&#10;&#10;&#10;"/>
+        <sourcecode id="uNptNnXAOb25M" value="self.name=name&#10;self.age=0&#10;self.is_alive=True&#10;"/>
+        <sourcecode id="uGwOyFMSDn1T2" value="pass&#10;"/>
+        <sourcecode id="umxYh4orZhsvK" value="self.is_alive=False&#10;"/>
+        <sourcecode id="u76hGoDbf6Ap0" value="pass&#10;"/>
+        <sourcecode id="uHnoShQnhke5Y" value="super().__init__(name)&#10;self.min_size=min_size&#10;self.max_size=max_size&#10;self.current_size=min_size&#10;self.growth_rate=growth_rate&#10;self.space_needed=space_needed&#10;self.needs_ground=needs_ground&#10;self.reproduction_interval=reproduction_interval&#10;self.rounds_since_reproduction=0&#10;self.max_age=50&#10;"/>
+        <sourcecode id="uR9FOxtempmQD" value="if not self.is_alive:&#10;  return 0&#10;&#10;growth=int(self.growth_rate*weather_factor*&#10;random.uniform(0.7,1.3))new_size=min(self.current_size+growth,self.max_size)&#10;actual_growth=new_size-self.current_size&#10;self.current_size=new_size&#10;self.age+=1&#10;if self.age&gt;self.max_age:&#10;  self.is_alive=False&#10;  print(f&quot;{self.name} has withered away due to old age.&quot;)&#10;&#10;return actual_growth&#10;"/>
+        <sourcecode id="uqaQlJKCpNhZC" value="self.current_size-=amount&#10;if self.current_size&lt;self.min_size:&#10;  self.die()&#10;  return False&#10;&#10;return True&#10;"/>
+        <sourcecode id="uPrZbipBbF9fx" value="if self.rounds_since_reproduction&lt;self.reproduction_interval:&#10;  self.rounds_since_reproduction+=1&#10;  return False&#10;&#10;can_repro=(self.current_size&gt;=self.max_size*0.8 and self.age&gt;3)&#10;if can_repro:&#10;  self.rounds_since_reproduction=0&#10;&#10;return can_repro&#10;"/>
+        <sourcecode id="u3LJaIGwaYL4b" value="status=&quot;alive&quot;if self.is_alive else&quot;dead&quot;&#10;return(f&quot;{self.name} (Plant): Size {self.current_size}/&quot;&#10;f&quot;{self.max_size}, Age {self.age}, {status}&quot;)"/>
+        <sourcecode id="uBemO329PIY93" value="super().__init__(name,min_size=10,max_size=100,&#10;growth_rate=1,space_needed=15,needs_ground=True,reproduction_interval=10)"/>
+        <sourcecode id="uhrsD38Ac2O4l" value="super().__init__(name,min_size=2,max_size=10,&#10;growth_rate=4,space_needed=3,needs_ground=True,reproduction_interval=3)self.drought_resistance=random.randint(3,7)&#10;"/>
+        <sourcecode id="ujChJ6njNlk3j" value="super().__init__(name,min_size=8,max_size=60,&#10;growth_rate=2,space_needed=12,needs_ground=True,reproduction_interval=7)"/>
+        <sourcecode id="u7pTY8R5EYbQl" value="super().__init__(name,min_size=1,max_size=5,growth_rate=0,&#10;space_needed=0,needs_ground=True,reproduction_interval=999)self.current_size=5&#10;self.max_age=3&#10;"/>
+        <sourcecode id="uq5NuAzcIg0Jd" value="super().__init__(name)&#10;self.hunger=0&#10;self.max_hunger=max_hunger&#10;self.strength=strength&#10;self.hibernating=False&#10;self.feeding_interval=feeding_interval&#10;self.rounds_since_eating=0&#10;self.max_age=50&#10;self.metabolic_rate=1.0/self.feeding_interval&#10;self.hibernation_bonus=2&#10;self.repro_cooldown=0&#10;self.cooldown_duration=5&#10;self.min_repro_age=4&#10;self.hunger_threshold=5&#10;"/>
+        <sourcecode id="uOAVgaSYfAz9O" value="pass&#10;"/>
+        <sourcecode id="uQqOsweQnRZNg" value="if self.hunger&gt;=self.max_hunger:&#10;  self.die()&#10;  return True&#10;&#10;return False&#10;"/>
+        <sourcecode id="uZWcMFY5tOhMz" value="self.hibernating=True&#10;self.hunger=max(0,self.hunger-self.hibernation_bonus)&#10;"/>
+        <sourcecode id="uhlFL4g02lwAQ" value="self.hibernating=False&#10;"/>
+        <sourcecode id="uohpJLBw38NyX" value="self.age+=1&#10;if not self.hibernating:&#10;  self.hunger+=self.metabolic_rate&#10;  self.rounds_since_eating+=1&#10;&#10;"/>
+        <sourcecode id="u3wSlRO9C7BaG" value="if self.repro_cooldown&gt;0:&#10;  self.repro_cooldown-=1&#10;  return False&#10;&#10;is_ready=(&#10;self.age&gt;self.min_repro_age and self.hunger&lt;self.hunger_threshold)&#10;if is_ready:&#10;  self.repro_cooldown=self.cooldown_duration&#10;  return True&#10;&#10;return False&#10;"/>
+        <sourcecode id="uEm713WnFgv57" value="if self.age&gt;self.max_age:&#10;  self.is_alive=False&#10;  return True&#10;&#10;return False&#10;"/>
+        <sourcecode id="u3KId3Cjg0rL5" value="is_unable_to_eat=self.hibernating&#10;is_still_full=self.rounds_since_eating&lt;self.feeding_interval&#10;if is_unable_to_eat or is_still_full:&#10;  return False&#10;&#10;edible_plants=[p for p in habitat.plants if p.is_alive]&#10;if edible_plants:&#10;  plant=random.choice(edible_plants)&#10;  eat_amount=random.randint(1,4)&#10;  if plant.be_eaten(eat_amount):&#10;    self.hunger=max(0,self.hunger-eat_amount)&#10;    self.rounds_since_eating=0&#10;    return True&#10;&#10;  else:&#10;    habitat.remove_plant(plant)&#10;    self.hunger=max(0,self.hunger-eat_amount)&#10;    self.rounds_since_eating=0&#10;    return True&#10;&#10;&#10;return False&#10;"/>
+        <sourcecode id="uNCpisua1IVev" value="super().__init__(name,max_hunger,strength,feeding_interval)&#10;self.hunt_skill=random.randint(5,10)&#10;self.meat_reward=5&#10;"/>
+        <sourcecode id="uRtBQZdfqym9Z" value="is_sleeping=self.hibernating&#10;is_not_hungry_yet=self.rounds_since_eating&lt;self.feeding_interval&#10;if is_sleeping or is_not_hungry_yet:&#10;  return False&#10;&#10;prey_list=[]&#10;for animal in habitat.animals:&#10;  is_alive=animal.is_alive&#10;  is_not_me=animal!=self&#10;  is_not_carnivore=not isinstance(animal,Carnivore)&#10;  if is_alive and is_not_me and is_not_carnivore:&#10;    species_count=len([a for a in habitat.animals&#10;    if isinstance(a,type(animal))and a.is_alive])if species_count&gt;3:&#10;      prey_list.append(animal)&#10;&#10;&#10;&#10;if not prey_list:&#10;  return False&#10;&#10;prey=random.choice(prey_list)&#10;success_chance=(self.hunt_skill+self.strength)/20&#10;modifiers={&#10;&quot;Winter&quot;:0.8,&quot;Spring&quot;:1.1,&#10;&quot;Summer&quot;:1.05,&quot;Autumn&quot;:1.0}&#10;success_chance*=modifiers.get(habitat.season,1.0)&#10;if random.random()&lt;success_chance:&#10;  prey.die()&#10;  habitat.remove_animal(prey)&#10;  self.hunger=max(0,self.hunger-self.meat_reward)&#10;  self.rounds_since_eating=0&#10;  return True&#10;&#10;return False&#10;"/>
+        <sourcecode id="ub3QcXLkeDGPE" value="super().__init__(name,max_hunger,strength,feeding_interval)&#10;self.plant_bite_size=2&#10;self.meat_reward=5&#10;"/>
+        <sourcecode id="uVhBWKDXYDElV" value="is_sleeping=self.hibernating&#10;is_still_full=self.rounds_since_eating&lt;self.feeding_interval&#10;if is_sleeping or is_still_full:&#10;  return False&#10;&#10;is_very_hungry=self.hunger&gt;(self.max_hunger*0.7)&#10;if is_very_hungry:&#10;  potential_prey=[]&#10;  for animal in habitat.animals:&#10;    is_alive=animal.is_alive&#10;    is_not_self=animal!=self&#10;    is_weaker=animal.strength&lt;self.strength&#10;    if is_alive and is_not_self and is_weaker:&#10;      potential_prey.append(animal)&#10;&#10;&#10;  if potential_prey:&#10;    target=random.choice(potential_prey)&#10;    target.die()&#10;    habitat.remove_animal(target)&#10;    self.hunger=max(0,self.hunger-self.meat_reward)&#10;    self.rounds_since_eating=0&#10;    return True&#10;&#10;&#10;else:&#10;  plant_list=[p for p in habitat.plants if p.is_alive]&#10;  if plant_list:&#10;    plant=random.choice(plant_list)&#10;    plant.be_eaten(self.plant_bite_size)&#10;    self.hunger=max(0,self.hunger-self.plant_bite_size)&#10;    self.rounds_since_eating=0&#10;    return True&#10;&#10;&#10;return False&#10;"/>
+        <sourcecode id="uxuZZIQJYAxDo" value="super().__init__(name,max_hunger=6,strength=2,feeding_interval=1)&#10;self.repro_cooldown=0&#10;self.cooldown_duration=3&#10;self.min_repro_age=2&#10;self.hunger_threshold=4&#10;"/>
+        <sourcecode id="uBsSCErLOSwav" value="if self.repro_cooldown&gt;0:&#10;  self.repro_cooldown-=1&#10;  return False&#10;&#10;is_ready=(&#10;self.age&gt;self.min_repro_age and self.hunger&lt;self.hunger_threshold)&#10;if is_ready:&#10;  self.repro_cooldown=self.cooldown_duration&#10;  return True&#10;&#10;return False&#10;"/>
+        <sourcecode id="unfKxHC1PLZph" value="super().__init__(name,max_hunger=8,strength=3,feeding_interval=2)&#10;"/>
+        <sourcecode id="ucNcSUmy8cXvV" value="eucs=[p for p in habitat.plants&#10;if isinstance(p,Eucalyptus)and p.is_alive]if eucs:&#10;  if eucs:&#10;    plant=random.choice(eucs)&#10;    eat_amount=2&#10;&#10;  if plant.be_eaten(eat_amount):&#10;    self.hunger=max(0,self.hunger-eat_amount)&#10;    self.rounds_since_eating=0&#10;    return True&#10;&#10;&#10;return False&#10;"/>
+        <sourcecode id="uMvtkJMnMjbL9" value="super().__init__(name,max_hunger=15,strength=10,feeding_interval=3)&#10;"/>
+        <sourcecode id="u5bDwdqSGIGki" value="if season==&quot;Winter&quot;and not self.hibernating:&#10;  self.enter_hibernation()&#10;&#10;elif season!=&quot;Winter&quot;and self.hibernating:&#10;  self.wake_up()&#10;&#10;"/>
+      </codegenerator>
+    </codegeneration>
+  </xmi:Extension>
+</xmi:XMI>
